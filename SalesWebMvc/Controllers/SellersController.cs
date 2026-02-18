@@ -24,7 +24,6 @@ namespace SalesWebMvc.Controllers
         public IActionResult Create()
         {
             var departments = _departmentService.FindAll();
-
             var viewModel = new SellerFormViewModel
             {
                 Departments = departments
