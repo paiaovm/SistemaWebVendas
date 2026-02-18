@@ -11,8 +11,8 @@ using SalesWebMvc.Models;
 namespace SalesWebMvc.Migrations
 {
     [DbContext(typeof(SalesWebMvcContext))]
-    [Migration("20260213170118_OtherEntities")]
-    partial class OtherEntities
+    [Migration("20260218144707_Initial")]
+    partial class Initial
     {
         /// <inheritdoc />
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
@@ -68,7 +68,7 @@ namespace SalesWebMvc.Migrations
                         .ValueGeneratedOnAdd()
                         .HasColumnType("int");
 
-                    b.Property<double>("BaseSallary")
+                    b.Property<double>("BaseSalary")
                         .HasColumnType("double");
 
                     b.Property<DateTime>("BirthDate")
